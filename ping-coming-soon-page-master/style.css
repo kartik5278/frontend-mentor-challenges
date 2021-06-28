@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Libre Franklin",sans-serif;
+}
+
+main{
+	max-width: 650px;
+	margin: 60px auto;
+	text-align: center;
+	padding: 20px;
+}
+
+h1{
+	font-weight: 300;
+	color: hsl(0, 0%, 59%);
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+h1 span{
+	font-weight: 700;
+	color: hsl(209, 33%, 12%);
+}
+
+h3{
+	font-weight: 300;	
+	color: hsl(209, 33%, 12%);
+}
+
+
+form{
+	margin-top: 40px;
+	text-align: left;
+	display: flex;
+	align-items: flex-start;
+}
+
+form small{
+	display: inline-block;
+	color:  hsl(354, 100%, 66%);
+	font-style: italic;
+	margin: 10px 20px 40px;
+}
+
+.form-left{
+	flex: 0.7;
+}
+
+input{
+	font-family: "Libre Franklin",sans-serif;
+	font-size: 14px;
+	padding: 20px 25px;
+	border-radius: 50px;
+	border: 1px solid hsl(223, 100%, 88%);
+	width: 425px;
+	outline: none;
+	width: 100%;
+	/*border-color: hsl(0, 0%, 59%);*/
+}
+
+
+button{
+	background-color: hsl(223, 87%, 63%);
+	color: #fff;
+	border: none;
+	box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+	font-family: "Libre Franklin",sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	border-radius: 50px;
+	margin-left: 20px;
+	padding: 20px 0;
+	flex: 0.3;
+}
+
+button:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+.illustration{
+	max-width: 100%;
+	margin: 60px 0;
+}
+
+.social-links{
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-links li{
+	margin: 10px;
+}
+
+.social-links li a{
+	border-radius: 50%;
+	border: 1px solid hsl(223, 100%, 88%);
+	color: hsl(223, 87%, 63%);
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.social-links li a:hover{
+	color: #fff;
+	background-color: hsl(223, 87%, 63%);
+	border-color:  hsl(223, 87%, 63%);;
+}
+
+footer p{
+	color: hsl(0, 0%, 59%);
+}
+
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 650px){
+	form{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.form-left{
+		flex: 1;
+		width: 100%;
+	}
+
+	button{
+		margin-left: 0;
+		width: 100%;
+		flex: 1;
+	}
+}
